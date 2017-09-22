@@ -3,9 +3,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"monospace:size=14"
 };
-static const char dmenufont[]       = "monospace:size=10";
+static const char dmenufont[]       = "monospace:size=14";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -39,10 +39,10 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[G]",      gaplessgrid },    /* first entry is default */
 	{ "[M]",      monocle },
 	{ "|M|",      centeredmaster },
 	{ ">M>",      centeredfloatingmaster },
+	{ "[G]",      gaplessgrid },    /* grid mode without gaps*/
 };
 
 /* key definitions */
